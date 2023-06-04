@@ -13,7 +13,7 @@ class UserController extends Controller
             User::create([
                 'name' => $request->input('name'),
                 'email' => $request->input('email'),
-                'password' => $request->inout('password'),
+                'password' => $request->input('password'),
             ])
         );
     }
