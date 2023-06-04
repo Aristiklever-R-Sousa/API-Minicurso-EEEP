@@ -17,4 +17,12 @@ class UserController extends Controller
             ])
         );
     }
+
+    public function read(int $id)
+    {
+        return response(
+            User::findOrFail($id)
+        );
+    }
+
 }
