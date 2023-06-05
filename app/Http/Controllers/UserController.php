@@ -40,4 +40,12 @@ class UserController extends Controller
         );
     }
 
+    public function delete(int $id)
+    {
+        $user = User::destroy($id);
+
+        return response('Usuário '.$id.' deletado com sucesso');
+
+    }
+
 }
